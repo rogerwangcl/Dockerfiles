@@ -1,6 +1,6 @@
 FROM centos:latest
 
-RUN yum install --nogpgcheck -y ruby-devel gcc make rpm-build rubygems \
+RUN yum install --nogpgcheck -y ruby-devel gcc make wget rpm-build rubygems \
     && yum clean all \
     && rm -rf /var/cache/yum
 
